@@ -1,0 +1,399 @@
+/* MainStyles.css */
+
+/* Reset default browser styles */
+
+html, body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/13199689/pexels-photo-13199689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    /* 
+    background-image: url('https://images.pexels.com/photos/3782235/pexels-photo-3782235.jpeg');
+    */
+    background-size: cover;
+    background-position: center;
+ 	animation: zoomInOutBackground 20s linear infinite; /* Adjust animation duration for faster movement */
+}
+
+@keyframes zoomInOutBackground {
+    0%, 100% {
+        background-size: 100%; /* Initial and final size */
+    }
+    50% {
+        background-size: 150%; /* Zoomed size */
+    }
+    0% {
+        background-position: 0 0; /* Starting position */
+    }
+    100% {
+        background-position: 100% 0; /* Ending position */
+    }
+}
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 100px;
+    
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: red ;
+}
+
+.form-container {
+	flex: 1;
+	justify-content: center;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms form {
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.forms form input,
+.forms form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Other section styles... */
+
+/* Add more styles for different sections, buttons, forms, etc. as needed */
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.hero-title {
+    font-size: 2em;
+    font-weight: bold;
+    /* create a box shadow  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding: 10px 20px; /* Adding padding for the background */
+    background-color: #5c8eba; /* Background color for the title */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-title:hover {
+    background-color: #286090; /* Background color on hover */
+}
+
+.logout-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #800040; /* Background color for the link */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-link:hovergb(255, 255, 128), 255, 128), 255, 128)  background-color: #ff0000; /* Background color on hover */
+}
+
+/* Section rgb(14, 222, 45), 166, 238), 249, 242), 128, 64), 128, 0)tyling */
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    /* create a box shadow  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding: 10px 20px; /* Adding padding for the background */
+    background-color: #5c8eba; /* Background color for the title */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ideas Table Styling */
+.ideas-table {
+    width: 90%;
+    border-collapse: collapse;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffff80;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.ideas-table-header {
+    border-bottom: 2px solid #ccc;
+    padding: 8px ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;/* 
+    background-color: #f0f0f0; Background color for header */
+    color: #333; /* Text color */
+}
+
+.ideas-content-cell {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+    
+    background-color: #e8f5e9; /* Background color for content cells */
+    color: #333; /* Text color */
+}
+
+.ideas-content-cell:hover {
+    background-color: #ffff80; /* Background color on hover */
+}
+
+.idea-link {
+    text-decoration: none;
+    color:green;
+    font-style: oblique;
+    font-size: large;    
+}
+
+
+
+/* New Ideas Link Styling */
+.new-ideas-link {
+    text-decoration: none;
+    color: #5cb85c;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+/* New Idea Form Styling */
+.new-idea-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #5cb85c; /* Change to your desired focus color */
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: #008000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: #286090;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Change to your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #4cae4c; /* Change to your desired hover color */
+}
+
+
+.home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #337ab7; /* Background color for the link */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.home-link:hover {
+    background-color: #286090; /* Background color on hover */
+}
+
+
+/* Showing ONE post */
+
+
+.idea-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffff80;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.idea-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.idea-content {
+    margin-bottom: 15px;
+}
+
+.idea-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.idea-author {
+    color: #999;
+    font-style: italic;
+    text-align: right;
+}
+
+.idea-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00ff80; /* Background color for the link */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.action-link:hover {
+    text-decoration: underline;
+    background-color: #ff0000; /* Background color on hover */
+}
+
+
+
+
